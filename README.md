@@ -48,13 +48,14 @@ Tested the complete `PyChain` ledger and user interface by running the Streamlit
 
 ---
 
-### Link to the video that provides an overview of the application
-![alt="OverviewApplication"](Images/VideoScreenshot.png)
+### Link to the video on you tube that provides an overview of the application
 
 [![Watch the video](Images/VideoScreenshot.png)](https://www.youtube.com/watch?v=i7ilvcn7rQw)
 
 ---
+### The view recording is also checked in the repo and the name is ScreenRecording_18_BlockChain.mov
 
+![alt="OverviewApplication"](ScreenRecording_18_BlockChain.mov)
 
 
 
