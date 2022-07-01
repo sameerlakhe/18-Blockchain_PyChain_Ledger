@@ -183,25 +183,29 @@ receiver = st.text_input("Receiver")
 
 # @TODO:
 # Add an input area where you can get a value for `amount` from the user.
-amount = st.text_input("Amount")
+amount = st.number_input("Amount")
 
 if st.button("Add Block"):
     prev_block = pychain.chain[-1]
     prev_block_hash = prev_block.hash_block()
-    new_record = Record(sender, receiver, amount)
+    if(amount<=0):
+        st.error('Please enter a valid input')
+    else:
+    
+        new_record = Record(sender, receiver, amount)
 
-    # @TODO
-    # Update `new_block` so that `Block` consists of an attribute named `record`
-    # which is set equal to a `Record` that contains the `sender`, `receiver`,
-    # and `amount` values
-    new_block = Block(
-        record=new_record,
-        creator_id=42,
-        prev_hash=prev_block_hash
-    )
+        # @TODO
+        # Update `new_block` so that `Block` consists of an attribute named `record`
+        # which is set equal to a `Record` that contains the `sender`, `receiver`,
+        # and `amount` values
+        new_block = Block(
+            record=new_record,
+            creator_id=42,
+            prev_hash=prev_block_hash
+        )
 
-    pychain.add_block(new_block)
-    st.balloons()
+        pychain.add_block(new_block)
+        st.balloons()
 
 ################################################################################
 # Streamlit Code (continues)

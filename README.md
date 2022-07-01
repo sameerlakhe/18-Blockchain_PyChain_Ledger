@@ -57,7 +57,9 @@ Tested the complete `PyChain` ledger and user interface by running the Streamlit
 
 ![alt="OverviewApplication"](ScreenRecording_18_BlockChain.mov)
 
-
+### Addendum
+The number input was used later to get the amount info and validation is also added to check if the amount is greater than 0.
+However, the screen recording does not show that.
 
 
 
